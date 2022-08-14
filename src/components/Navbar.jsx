@@ -29,16 +29,6 @@ const Navbar = () => {
         },
       ];
 
-      const social = [
-          {
-              id: 1,
-              src: "www.google.com"
-          },
-          {
-            id: 2,
-            src: "www.google.com"
-        }
-      ]
     
       const [nav, setNav] = useState(false);
   return (
@@ -61,10 +51,10 @@ const Navbar = () => {
             </ul>
           </div>
           <div className='hidden md:flex space-x-5 text-3xl border-gray-100 border-x'>
-              <a href='www.google.com' className="">
+              <a href='https://github.com/AzmSurov' className="">
 <FaGithub/>
               </a>
-              <a href='www.linkedin.com' className=''>
+              <a href='https://linkedin.com/in/azms' className=''>
 <FaLinkedinIn/>
               </a>
           </div>

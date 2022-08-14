@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import unsplashProject from "../assets/projects/Unsplash.png";
-import { FaGithubSquare } from "react-icons/fa";
 
 
 const Portfolio = () => {

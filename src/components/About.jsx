@@ -10,7 +10,7 @@ const About = () => {
       <div className="p-4 mx-auto flex flex-col justify-center w-full h-full">
 
         <p className="text-4xl font-bold">
-        <RoughNotation type="underline" strokeWidth={5} show={true} color="#457b9d">
+        <RoughNotation type="underline" animationDelay={2000} strokeWidth={5} show={true} color="#457b9d">
             About
             </RoughNotation>
           </p>

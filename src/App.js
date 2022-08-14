@@ -6,6 +6,9 @@ import Main from "./components/Main";
 import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
+
+
+
 function App() {
   
 

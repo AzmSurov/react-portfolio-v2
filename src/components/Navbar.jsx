@@ -50,7 +50,7 @@ const Navbar = ({ setSendData }) => {
                       brackets={["left", "right"]}
                       strokeWidth={2}
                       show={true}
-                      color="#57cc99"
+                      color="#8ac926"
                     >
                       {link}
                     </RoughNotation>

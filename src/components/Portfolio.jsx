@@ -189,7 +189,7 @@ const [highlightsThird, setHighlightsThird] = useState(false)
                             <div class="p-8 sm:col-span-2">
                               <ul class="flex space-x-1">
                                 {idx.map((element, idx) => (
-                                    <RoughNotation type="box" strokeWidth={1} show={highlights} color="#6a4c93">
+                                    <RoughNotation type="box" animationDelay={500} strokeWidth={1} show={highlights} color="#6a4c93">
                                   <li class="inline-block px-6 py-1 text-xs font-semibold text-black rounded-full">
                                     {element}
                                   </li>
@@ -281,7 +281,7 @@ const [highlightsThird, setHighlightsThird] = useState(false)
                             <div class="p-8 sm:col-span-2">
                               <ul class="flex space-x-1">
                                 {idx.map((element, idx) => (
-                                    <RoughNotation type="box" strokeWidth={1} show={highlightsThird} color="#6a4c93">
+                                    <RoughNotation type="box" animationDelay={500} strokeWidth={1} show={highlightsThird} color="#6a4c93">
 
                                   <li class="inline-block px-5 py-1 text-xs font-semibold text-black">
                                     {element}

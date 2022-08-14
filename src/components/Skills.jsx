@@ -63,7 +63,7 @@ const Skills = () => {
     <div className="p-4 text-black">
       <div>
         <p className="text-4xl font-bold inline">
-        <RoughNotation type="underline" strokeWidth={7} show={true} color="#ff595e">
+        <RoughNotation type="underline" animationDelay={1000} strokeWidth={7} show={true} color="#ff595e">
             Skills
             </RoughNotation>
         </p>

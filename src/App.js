@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -10,12 +11,12 @@ import Skills from "./components/Skills";
 
 
 function App() {
-  
+const [sendData, setSendData] = useState(true);
 
   return (
     <div className="antialiased container mx-auto h-screen tracking-wide">
-      <Navbar />
-      <Main />
+      <Navbar setSendData ={setSendData} />
+      <Main sendData= {sendData} />
       <About />
       <Skills />
       <Portfolio />

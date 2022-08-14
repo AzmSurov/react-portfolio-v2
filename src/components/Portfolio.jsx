@@ -80,7 +80,7 @@ const [highlightsThird, setHighlightsThird] = useState(false)
         <div className="p-4 mx-auto flex flex-col justify-center w-full h-full">
           <div className="pb-8">
             <p className="text-4xl font-bold inline">
-            <RoughNotation type="underline" strokeWidth={5} show={true} color="#c8b6ff">
+            <RoughNotation type="underline" animationDelay={1000} strokeWidth={5} show={true} color="#c8b6ff">
             Portfolio
             </RoughNotation>
             </p>
@@ -110,7 +110,7 @@ const [highlightsThird, setHighlightsThird] = useState(false)
                   href="#link1"
                   role="tablist"
                 >
-                  <RoughNotation type="underline" strokeWidth={5} show={highlights} color="#8ac926">
+                  <RoughNotation type="underline" animationDelay={500} strokeWidth={5} show={highlights} color="#8ac926">
             Fullstack
             </RoughNotation>
                 </div>
@@ -131,7 +131,7 @@ const [highlightsThird, setHighlightsThird] = useState(false)
                   href="#link2"
                   role="tablist"
                 >
-                  <RoughNotation type="underline" strokeWidth={5} show={highlightsSecond} color="#ff595e">
+                  <RoughNotation type="underline" animationDelay={500} strokeWidth={5} show={highlightsSecond} color="#ff595e">
             Front-end
             </RoughNotation>
                 </div>
@@ -152,7 +152,7 @@ const [highlightsThird, setHighlightsThird] = useState(false)
                   href="#link3"
                   role="tablist"
                 >
-                   <RoughNotation type="underline" strokeWidth={5} show={highlightsThird} color="#6a4c93">
+                   <RoughNotation type="underline" animationDelay={500} strokeWidth={5} show={highlightsThird} color="#6a4c93">
             Others
             </RoughNotation>
                 </div>

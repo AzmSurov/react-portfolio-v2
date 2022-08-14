@@ -2,7 +2,8 @@ import React from 'react'
 import heroBg from '../assets/bgMain.png'
 import '../App.css'
 import { Link } from "react-scroll";
-const Main = () => {
+import { RoughNotation } from "react-rough-notation";
+const Main = ({sendData}) => {
   return (
     <div >
 
@@ -13,7 +14,9 @@ const Main = () => {
             <h1 className=" lg:text-3xl xl:text-6xl sm:text-4xl text-4xl font-grotesque font-bold tracking-wide  mb-6 leading-10 text-gray-900">
           Hello! I'm <span class="bg-clip-text text-transparent   bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
     Azm Mohibul Haque Surov
-  </span>, a Full Stack Developer based in Canada.
+  </span>, a Full Stack Developer based in <RoughNotation type="underline" animationDelay={1000} strokeWidth={5} show={sendData} color="#c8b6ff">
+            Canada
+            </RoughNotation>
 
           </h1>
           <p className="leading-7 mb-6 text-gray-900 text-xl">

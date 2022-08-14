@@ -9,7 +9,7 @@ const Contact = () => {
       <div className="flex flex-col p-4 justify-center w-full h-full">
         <div className="">
           <p className="text-4xl font-bold inline">
-          <RoughNotation type="underline" strokeWidth={7} show={true} color="#606c38">
+          <RoughNotation type="underline" animationDelay={1000} strokeWidth={7} show={true} color="#606c38">
             Contact
             </RoughNotation>
           </p>

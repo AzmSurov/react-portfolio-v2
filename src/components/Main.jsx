@@ -8,7 +8,7 @@ const Main = () => {
 
         <section className="flex flex-col-reverse justify-between lg:flex-row lg:justify-between    lg:space-x-12 m-3">
             
-            <div className=' mx-auto w-2/3 lg:w-full sm:py-10'><img className='rounded-2xl shadow-xl'  src={heroBg} /></div>
+            <div className=' mx-auto w-2/3 lg:w-full sm:py-10'><img className='rounded-2xl shadow-xl'  src={heroBg} alt="hero"/></div>
             <div className='xl:py-10 md:py-6'>
             <h1 className=" lg:text-3xl xl:text-6xl sm:text-4xl text-4xl font-grotesque font-bold tracking-wide  mb-6 leading-10 text-gray-900">
           Hi! I'm <span class="bg-clip-text text-transparent   bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">

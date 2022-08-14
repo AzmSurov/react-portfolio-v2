@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { RoughNotation } from "react-rough-notation";
 import html from "../assets/icons/Html5.png";
 import css from "../assets/icons/css.png";
 import javascript from "../assets/icons/js.png";
@@ -62,10 +62,12 @@ const Skills = () => {
   >
     <div className="p-4 text-black">
       <div>
-        <p className="text-4xl font-bold border-b-4 border-gray-500 inline">
-          Skills
+        <p className="text-4xl font-bold inline">
+        <RoughNotation type="underline" strokeWidth={7} show={true} color="#ff595e">
+            Skills
+            </RoughNotation>
         </p>
-        <p className="py-6">These are the technologies I've worked with</p>
+        <p className="py-6 text-xl">These are the technologies I've worked with and learning something new every other day!</p>
       </div>
       </div>
 

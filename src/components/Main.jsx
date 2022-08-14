@@ -11,13 +11,13 @@ const Main = () => {
             <div className=' mx-auto w-2/3 lg:w-full sm:py-10'><img className='rounded-2xl shadow-xl'  src={heroBg} alt="hero"/></div>
             <div className='xl:py-10 md:py-6'>
             <h1 className=" lg:text-3xl xl:text-6xl sm:text-4xl text-4xl font-grotesque font-bold tracking-wide  mb-6 leading-10 text-gray-900">
-          Hi! I'm <span class="bg-clip-text text-transparent   bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
+          Hello! I'm <span class="bg-clip-text text-transparent   bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
     Azm Mohibul Haque Surov
-  </span> and I'm a Full Stack Developer.
+  </span>, a Full Stack Developer based in Canada.
 
           </h1>
           <p className="leading-7 mb-6 text-gray-900 text-xl">
-          I'm a passionate JavaScript Developer focused on efficiency and constant learning. I have created solutions for my clients by improving their web development processes and accomplish their ideas come true, either from the front-end or the back-end mostly using technologies like JavaScript, React, Typescript, Node, Express.js, Firebase & MongoDB.
+          I'm a passionate JavaScript Developer focused on efficiency and constant learning.  I love bringing new ideas to life by building user-centric interfaces either from the front-end or the back-end mostly using technologies like JavaScript, React, Typescript, Node, Express.js, Firebase & MongoDB.
           </p>
           
           <div id='gone' class=" text-center">

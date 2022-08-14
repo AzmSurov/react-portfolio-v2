@@ -1,4 +1,5 @@
 import React from "react";
+import { RoughNotation } from "react-rough-notation";
 
 const About = () => {
   return (
@@ -7,31 +8,27 @@ const About = () => {
       className="mt-10  text-gray-900"
     >
       <div className="p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-4">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+
+        <p className="text-4xl font-bold">
+        <RoughNotation type="underline" strokeWidth={5} show={true} color="#457b9d">
             About
+            </RoughNotation>
           </p>
-        </div>
 
         <p className="text-xl mt-10">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius,
-          deserunt illum mollitia officiis qui exercitationem perferendis neque
-          quasi a recusandae necessitatibus tempora iusto! Blanditiis error
-          iste, totam fugiat recusandae rerum laborum perferendis molestiae
-          aperiam asperiores nemo. Magni dolor maxime debitis vitae, eaque hic
-          ab mollitia voluptatibus, a nostrum eveniet laborum!
+          Hi! I'm based in Winnipeg, Manitoba and currently I work as a Product Support Specialist. My passion for web development started back in 2017 when I decided to try editing a Shopify theme — turns out hacking together a simple add to cart button taught me a lot about HTML & CSS! I’ve always been curious about technology and how things work. Figuring things out is what inspired me to learn how to code.
         </p>
 
         <br />
 
         <p className="text-xl">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-          pariatur, vel similique sint, nobis aspernatur ut praesentium
-          explicabo ipsam aliquid quasi laboriosam et culpa possimus repudiandae
-          quisquam ullam maiores ab unde. Fugiat odio mollitia nemo alias.
-          Commodi facilis atque nulla vero voluptatem explicabo. Quibusdam,
-          magni quo! Eum cupiditate debitis labore.
+        I love bringing new ideas to life so I code both the front-end and the back-end. In particular, I enjoy the sense of pride and accomplishment when combining everything into a complete project.
         </p>
+
+        <br />
+        <p className="text-xl " >Here is my <a  href="/resume.pdf" > <RoughNotation  type="highlight" padding={5}  show={true} color="#ffd54f">
+            resume
+            </RoughNotation></a> in case you want to have a look.</p>
       </div>
     </div>
   );

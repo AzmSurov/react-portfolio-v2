@@ -4,6 +4,7 @@ import { BiMenuAltRight } from "react-icons/bi";
 import { FaTimes, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { useState } from "react";
+import { RoughNotation } from "react-rough-notation";
 const Navbar = () => {
 
     const links = [
@@ -35,26 +36,30 @@ const Navbar = () => {
     <div>
               <header className="pt-4 mb-4">
         <div className="flex justify-between items-center px-4 py-6">
-          <div className="text-3xl font-signature">AZM</div>
+          <div className="text-3xl font-signature"><p>
+            Azm
+</p></div>
           <div className="flex justify-around">
-            <ul className="hidden md:flex">
+            <ul className="hidden md:flex space-x-5">
               {links.map(({ id, link }) => (
                 <li
                   key={id}
-                  className="text-lg px-3 cursor-pointer capitalize font-medium text-gray-900 hover:scale-125 duration-200 hover:text-blue-500"
+                  className="text-lg px-3 cursor-pointer capitalize font-medium text-gray-900 "
                 >
                   <Link to={link} smooth duration={500}>
-                    {link}
+                  <RoughNotation type='underline' brackets={["left", "right"]} strokeWidth={2}  show={true} color="#57cc99">
+            {link}
+          </RoughNotation>
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
           <div className='hidden md:flex space-x-5 text-3xl border-gray-100 border-x'>
-              <a href='https://github.com/AzmSurov' className="">
+              <a href='https://github.com/AzmSurov' target="_blank" rel="noreferrer">
 <FaGithub/>
               </a>
-              <a href='https://linkedin.com/in/azms' className=''>
+              <a href='https://linkedin.com/in/azms' target="_blank" rel="noreferrer">
 <FaLinkedinIn/>
               </a>
           </div>

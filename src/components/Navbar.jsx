@@ -34,8 +34,8 @@ const Navbar = ({ setSendData }) => {
     <div>
       <header className="pt-4 mb-4">
         <div className="flex justify-between items-center px-4 py-6">
-          <div className="text-3xl font-signature">
-            <p>Azm</p>
+          <div className="text-4xl font-signature tracking-wide	">
+            <p className="">AZM</p>
           </div>
           <div className="flex justify-around">
             <ul className="hidden md:flex space-x-5">
@@ -51,6 +51,7 @@ const Navbar = ({ setSendData }) => {
                       strokeWidth={2}
                       show={true}
                       color="#8ac926"
+                      animationDelay={500}
                     >
                       {link}
                     </RoughNotation>
@@ -64,6 +65,7 @@ const Navbar = ({ setSendData }) => {
               href="https://github.com/AzmSurov"
               target="_blank"
               rel="noreferrer"
+              c
             >
               <FaGithub />
             </a>
@@ -71,6 +73,7 @@ const Navbar = ({ setSendData }) => {
               href="https://linkedin.com/in/azms"
               target="_blank"
               rel="noreferrer"
+              class="text-sky-600 hover:text-opacity-75"
             >
               <FaLinkedinIn />
             </a>

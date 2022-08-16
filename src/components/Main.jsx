@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 import { RoughNotation } from "react-rough-notation";
 const Main = ({sendData}) => {
   return (
-    <div >
+    <div className=''>
 
         <section className="flex flex-col-reverse justify-between lg:flex-row lg:justify-between    lg:space-x-12 m-3">
             <div className=' mx-auto w-2/3 lg:w-full sm:py-10'><img className='rounded-2xl shadow-xl'  src={heroBg} alt="hero"/></div>

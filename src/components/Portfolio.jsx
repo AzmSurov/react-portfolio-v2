@@ -197,7 +197,7 @@ const [highlightsThird, setHighlightsThird] = useState(false)
                                 ))}
                               </ul>
 
-                              <h5 class="mt-4 font-bold">{title}</h5>
+                              <p class="mt-4 font-bold">{title}</p>
 
                               <p class="mt-2 text-sm text-gray-600">
                                 {description}

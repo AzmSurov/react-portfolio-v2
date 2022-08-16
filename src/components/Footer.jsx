@@ -51,7 +51,7 @@ const Footer = () => {
       </div>
 
 
-<p class="text-sm font-medium"> Made with ❤️️ by <RoughNotation type="highlight" show={true} color="#8ac926">Azm Mohibul Haque Surov</RoughNotation> { } &copy; {new Date().getFullYear()}</p>
+<p class="text-sm font-medium"> Made with ❤️️ by <RoughNotation type="underline" show={true} color="#ffd54f">Azm Mohibul Haque Surov</RoughNotation> { } &copy; {new Date().getFullYear()}</p>
     </div>
   </div>
 </footer>

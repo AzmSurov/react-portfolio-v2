@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { RoughNotation } from "react-rough-notation";
 import unsplashProject from "../assets/projects/fullStack/Unsplash.png";
 import memoryGame from "../assets/projects/miniProjects/memoryGame.png"
-import mealGenerator from "../assets/projects/miniProjects/mealGenerator.png"
+import mealGenerator from "../assets/projects/miniProjects/MealGenerator.png"
 const Portfolio = () => {
   //FullStack Projects
   const fullstack = [
@@ -66,7 +66,7 @@ const Portfolio = () => {
       title: "Unsplash API",
       description:
         "A simple app to display pictures from Unsplash. This mini project makes use of unsplash API to search for and display images based on the search keyword",
-      idx: ["HTML", "CSS", "JS"],
+      idx: ["HTML", "CSS", "JS", "API"],
     },
     {
       id: 3,

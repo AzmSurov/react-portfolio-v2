@@ -1,4 +1,4 @@
 # My Personal Portfolio
 
-View it live : [Create React App](https://www.azms.me).
+View it live : [Portfolio Site](https://www.azms.me).
 

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { RoughNotation } from "react-rough-notation";
 import unsplashProject from "../assets/projects/fullStack/Unsplash.png";
 import memoryGame from "../assets/projects/miniProjects/memoryGame.png"
-
+import mealGenerator from "../assets/projects/miniProjects/mealGenerator.png"
 const Portfolio = () => {
   //FullStack Projects
   const fullstack = [
@@ -65,9 +65,19 @@ const Portfolio = () => {
       sourceCode: "https://github.com/AzmSurov/UnsplashApi",
       title: "Unsplash API",
       description:
-        "A simply app to display pictures from Unsplash. This mini project makes use of unsplash API to search for and display images based on the search keyword",
+        "A simple app to display pictures from Unsplash. This mini project makes use of unsplash API to search for and display images based on the search keyword",
       idx: ["HTML", "CSS", "JS"],
-    }
+    },
+    {
+      id: 3,
+    src: mealGenerator,
+    liveLink: "https://beamish-phoenix-d80e8c.netlify.app/",
+    sourceCode: "https://github.com/AzmSurov/random-meal-generator",
+    title: "Random Meal Generator",
+    description:
+      "An app that fetches data from MealDB which displays a random meal on load.",
+    idx: ["HTML", "CSS", "JS"],
+  }
   ];
 
   const [openTab, setOpenTab] = useState(1);

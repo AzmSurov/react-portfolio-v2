@@ -76,7 +76,7 @@ const Portfolio = () => {
     title: "Random Meal Generator",
     description:
       "An app that fetches data from MealDB which displays a random meal on load.",
-    idx: ["HTML", "CSS", "JS"],
+    idx: ["React", "Tailwind", "API"],
   }
   ];
 

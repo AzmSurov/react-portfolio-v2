@@ -8,8 +8,10 @@ import Main from "./components/Main";
 import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
+import ReactGA from 'react-ga';
 
-
+ReactGA.initialize('UA-238163132-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 function App() {
 const [sendData, setSendData] = useState(true);

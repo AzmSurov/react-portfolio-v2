@@ -8,10 +8,10 @@ const Contact = () => {
     >
       <div className="flex flex-col p-4 justify-center w-full h-full">
         <div className="">
-          <p className="text-4xl font-bold inline">
-          <RoughNotation type="underline" animationDelay={1000} strokeWidth={7} show={true} color="#606c38">
+          <p className="text-4xl font-bold inline border-b-4 border-red-600">
+
             Contact
-            </RoughNotation>
+
           </p>
           <p className="py-6">Submit the form below to get in touch with me</p>
         </div>

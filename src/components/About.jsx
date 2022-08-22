@@ -1,7 +1,7 @@
 import React from "react";
 import { RoughNotation } from "react-rough-notation";
 
-const About = () => {
+const About = ({sendData}) => {
   return (
     <div
       name="about"
@@ -10,7 +10,7 @@ const About = () => {
       <div className="p-4 mx-auto flex flex-col justify-center w-full h-full">
 
         <p className="text-4xl font-bold">
-        <RoughNotation type="underline" animationDelay={1000} strokeWidth={5} show={true} color="#457b9d">
+        <RoughNotation type="underline" animationDelay={1000} strokeWidth={5} show={sendData} color="#457b9d">
             About
             </RoughNotation>
           </p>

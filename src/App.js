@@ -32,7 +32,7 @@ useEffect(() => {
         [
       <Navbar setSendData ={setSendData} />,
       <Main sendData= {sendData} />,
-      <About />,
+      <About sendData= {sendData} />,
       <Skills />,
       <Portfolio />,
       <Contact />,

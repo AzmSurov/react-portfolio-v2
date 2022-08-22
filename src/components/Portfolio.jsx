@@ -4,6 +4,7 @@ import unsplashProject from "../assets/projects/fullStack/Unsplash.png";
 import memoryGame from "../assets/projects/miniProjects/memoryGame.png";
 import mealGenerator from "../assets/projects/miniProjects/MealGenerator.png";
 import shadowUI from "../assets/projects/frontEnd/ShadowUI.png"
+import travelAgency from "../assets/projects/frontEnd/travel-agency.png"
 const Portfolio = () => {
   //FullStack Projects
   const fullstack = [
@@ -23,6 +24,16 @@ const Portfolio = () => {
   const frontEnd = [
     {
       id: 1,
+      src: travelAgency,
+      liveLink: "https://tailwind-travel-agency.netlify.app/",
+      sourceCode: "https://github.com/AzmSurov/travel-agency-tailwind",
+      title: "Travel Agency",
+      description:
+        "A travel agency front-end site. Single page application developed using React and Tailwind to showcase beautiful destinations available. It's time to explore the world!",
+      idx: ["React", "Tailwind"],
+    },
+    {
+      id: 2,
       src: shadowUI,
       liveLink: "https://tailwind-gradients.netlify.app/",
       sourceCode: "https://github.com/AzmSurov/shadow",
@@ -30,7 +41,7 @@ const Portfolio = () => {
       description:
         "Introducing Shadow UI, a web-based gradient collection site, with 20+ trendy and beautiful gradients for your apps, blog, UI design or to use as content backgrounds. You can also use the Text Gradients section to generate beautiful Tailwind  text gradients",
       idx: ["React", "TypeScript", "Tailwind"],
-    },
+    }
     
   ];
   const miniProjects = [
@@ -173,7 +184,7 @@ const Portfolio = () => {
                     show={highlightsThird}
                     color="#6a4c93"
                   >
-                    Others
+                    API & Others
                   </RoughNotation>
                 </div>
               </li>

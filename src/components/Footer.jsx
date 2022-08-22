@@ -2,7 +2,6 @@ import React from 'react'
 import {FaGithub, FaLinkedinIn } from "react-icons/fa";
 import {FiMail} from 'react-icons/fi'
 import { RiFilePaper2Line } from "react-icons/ri"
-import { RoughNotation } from "react-rough-notation";
 const Footer = () => {
   return (
     <div>
@@ -51,7 +50,7 @@ const Footer = () => {
       </div>
 
 
-<p class="text-sm font-medium"> Made with ❤️️ by <RoughNotation type="underline" show={true} color="#ffd54f">Azm Mohibul Haque Surov</RoughNotation> { } &copy; {new Date().getFullYear()}</p>
+<p class="text-lg font-medium"> Made with ❤️️ by <span className='  bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-lg'>Azm Mohibul Haque Surov</span> &copy; {new Date().getFullYear()}</p>
     </div>
   </div>
 </footer>

@@ -7,7 +7,7 @@ const Contact = () => {
     >
       <div className="flex flex-col p-4 justify-center w-full h-full">
         <div className="">
-          <p className="text-4xl font-bold inline border-b-4 border-red-600">
+          <p className="text-4xl font-bold inline border-b-4 border-[#ffca3a]">
 
             Contact
 

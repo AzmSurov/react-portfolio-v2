@@ -5,6 +5,7 @@ import memoryGame from "../assets/projects/miniProjects/memoryGame.png";
 import mealGenerator from "../assets/projects/miniProjects/MealGenerator.png";
 import shadowUI from "../assets/projects/frontEnd/ShadowUI.png"
 import travelAgency from "../assets/projects/frontEnd/travel-agency.png"
+import organo from "../assets/projects/frontEnd/organo.png"
 const Portfolio = () => {
   //FullStack Projects
   const fullstack = [
@@ -17,6 +18,7 @@ const Portfolio = () => {
       description:
         "A simply app to display pictures from Unsplash. This mini project makes use of unsplash API to search for and display images based on the search keyword",
       idx: ["HTML", "CSS", "JS"],
+      isHidden: ""
     },
     
   ];
@@ -29,11 +31,23 @@ const Portfolio = () => {
       sourceCode: "https://github.com/AzmSurov/travel-agency-tailwind",
       title: "Travel Agency",
       description:
-        "A travel agency front-end site. Single page application developed using React and Tailwind to showcase beautiful destinations available. It's time to explore the world!",
+        "A complete travel agency front-end site. Single page site developed using React and Tailwind to showcase beautiful destinations available. It's time to explore the world!",
       idx: ["React", "Tailwind"],
+      isHidden: ""
     },
     {
       id: 2,
+      src: organo,
+      liveLink: "https://tailwind-gradients.netlify.app/",
+      sourceCode: "https://github.com/AzmSurov/shadow",
+      title: "Organo",
+      description:
+        "Landing page for your next restaurant!",
+      idx: ["React", "Tailwind"],
+      isHidden: ""
+    },
+    {
+      id: 3,
       src: shadowUI,
       liveLink: "https://tailwind-gradients.netlify.app/",
       sourceCode: "https://github.com/AzmSurov/shadow",
@@ -41,6 +55,7 @@ const Portfolio = () => {
       description:
         "Introducing Shadow UI, a web-based gradient collection site, with 20+ trendy and beautiful gradients for your apps, blog, UI design or to use as content backgrounds. You can also use the Text Gradients section to generate beautiful Tailwind  text gradients",
       idx: ["React", "TypeScript", "Tailwind"],
+      isHidden: ""
     }
     
   ];
@@ -54,6 +69,7 @@ const Portfolio = () => {
       description:
         "A simple Memory Puuzzle game. Flip all of the matching tiles to win the game!",
       idx: ["React"],
+      isHidden: ""
     },
     {
       id: 2,
@@ -64,6 +80,7 @@ const Portfolio = () => {
       description:
         "A simple app to display pictures from Unsplash. This mini project makes use of unsplash API to search for and display images based on the search keyword",
       idx: ["HTML", "CSS", "JS", "API"],
+      isHidden: ""
     },
     {
       id: 3,
@@ -74,6 +91,7 @@ const Portfolio = () => {
       description:
         "An app that fetches data from MealDB which displays a random meal on load.",
       idx: ["React", "Tailwind", "API"],
+      isHidden: ""
     },
   ];
 
@@ -206,6 +224,7 @@ const Portfolio = () => {
                         title,
                         description,
                         idx,
+                        isHidden
                       }) => (
                         <div key={id} className="py-5">
                           <div class="grid grid-cols-1 overflow-hidden border border-gray-100 rounded-lg group sm:grid-cols-3">
@@ -263,7 +282,7 @@ const Portfolio = () => {
 
                                   <a
                                     href={liveLink}
-                                    class="relative inline-flex items-center justify-center px-4 py-2 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                                    class={"relative inline-flex items-center justify-center px-4 py-2 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 " + (isHidden)}
                                     target="_blank"
                                     rel="noreferrer"
                                   >
@@ -329,6 +348,8 @@ const Portfolio = () => {
                                 <a
                                   class="px-4 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                                   href={sourceCode}
+                                  target="_blank"
+                                  rel="noreferrer"
                                 >
                                   <svg
                                     role="img"
@@ -348,6 +369,8 @@ const Portfolio = () => {
                                     title=""
                                     class="relative inline-flex items-center justify-center px-4 py-2 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                                     role="button"
+                                    target="_blank"
+                                    rel="noreferrer"
                                   >
                                     Demo
                                   </a>
@@ -411,6 +434,8 @@ const Portfolio = () => {
                                 <a
                                   class="px-4 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                                   href={sourceCode}
+                                  target="_blank"
+                                  rel="noreferrer"
                                 >
                                   <svg
                                     role="img"
@@ -430,6 +455,8 @@ const Portfolio = () => {
                                     title=""
                                     class="relative inline-flex items-center justify-center px-4 py-2 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                                     role="button"
+                                    target="_blank"
+                                    rel="noreferrer"
                                   >
                                     Demo
                                   </a>

@@ -5,7 +5,7 @@ import { FaTimes, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { useState } from "react";
 import { RoughNotation } from "react-rough-notation";
-import icon from "../assets/icons/A2.png"
+
 const Navbar = ({ setSendData }) => {
   const links = [
     {

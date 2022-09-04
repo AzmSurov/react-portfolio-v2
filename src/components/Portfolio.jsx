@@ -6,6 +6,7 @@ import mealGenerator from "../assets/projects/miniProjects/MealGenerator.png";
 import shadowUI from "../assets/projects/frontEnd/ShadowUI.png"
 import travelAgency from "../assets/projects/frontEnd/travel-agency.png"
 import organo from "../assets/projects/frontEnd/organo.png"
+import pos from "../assets/projects/frontEnd/pos.png"
 const Portfolio = () => {
   //FullStack Projects
   const fullstack = [
@@ -26,6 +27,17 @@ const Portfolio = () => {
   const frontEnd = [
     {
       id: 1,
+      src: pos,
+      liveLink: "https://pos-dashboard.netlify.app",
+      sourceCode: "https://github.com/AzmSurov/dashboard",
+      title: "POS Dashboard",
+      description:
+        "Simplify your life with my newly designed POS Web App that includes cutting edge order reports. Comes in dark mode!",
+      idx: ["React", "Tailwind"],
+      isHidden: ""
+    },
+    {
+      id: 2,
       src: travelAgency,
       liveLink: "https://tailwind-travel-agency.netlify.app/",
       sourceCode: "https://github.com/AzmSurov/travel-agency-tailwind",
@@ -36,10 +48,10 @@ const Portfolio = () => {
       isHidden: ""
     },
     {
-      id: 2,
+      id: 3,
       src: organo,
-      liveLink: "https://tailwind-gradients.netlify.app/",
-      sourceCode: "https://github.com/AzmSurov/shadow",
+      liveLink: "https://organo-ui.netlify.app/",
+      sourceCode: "https://github.com/AzmSurov/organo",
       title: "Organo",
       description:
         "Landing page for your next restaurant!",
@@ -47,7 +59,7 @@ const Portfolio = () => {
       isHidden: ""
     },
     {
-      id: 3,
+      id: 4,
       src: shadowUI,
       liveLink: "https://tailwind-gradients.netlify.app/",
       sourceCode: "https://github.com/AzmSurov/shadow",

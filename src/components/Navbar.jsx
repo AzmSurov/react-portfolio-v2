@@ -1,10 +1,10 @@
 import React from "react";
-
+import ".././App.css";
 import { BiMenuAltRight } from "react-icons/bi";
-import { FaTimes, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaTimes} from "react-icons/fa";
 import { Link } from "react-scroll";
 import { useState } from "react";
-import { RoughNotation } from "react-rough-notation";
+import Switcher from "./Switcher";
 
 const Navbar = ({ setSendData }) => {
   const links = [
@@ -32,16 +32,18 @@ const Navbar = ({ setSendData }) => {
 
   const [nav, setNav] = useState(false);
   return (
-    <div>
-      <header className="mb-4">
-        <div className="flex justify-between items-center px-4 py-6">
+    <div className=" ">
+      
+      <div className="nav"></div>
+      <header className="container mx-auto">
+        <div className="flex justify-between items-center px-4 py-4">
           <div className="">
           <div class="relative inline-flex group ">
-                                  <div class="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#19A186] to-[#F2CF43]  blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+                                  <div class="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r dark:from-blue-400 dark:to-indigo-500  blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
 
                                   <a
 
-                                    class={"relative inline-flex items-center justify-center px-4 py-2 text-2xl  font-extrabold text-white transition-all duration-200 bg-gray-900 font-pj  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:opacity-90"}
+                                    class={"relative inline-flex items-center justify-center px-4 py-2 text-3xl  font-extrabold text-white transition-all duration-200 bg-gray-900 dark:bg-white dark:text-gray-900 font-pj  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:opacity-90"}
                                     target="_blank"
                                     href="/"
 
@@ -51,47 +53,27 @@ const Navbar = ({ setSendData }) => {
                                 </div>
             
           </div>
-          <div className="flex justify-around">
-            <ul className="hidden md:flex space-x-5">
+          <div className="flex justify-around ">
+            <ul className="hidden md:flex space-x-3 items-center">
               {links.map(({ id, link }) => (
                 <li
                   key={id}
-                  className="text-lg px-3 cursor-pointer capitalize font-medium text-gray-900 "
+                  className="text-md  cursor-pointer capitalize font-medium text-gray-900 dark:text-white hover:bg-[#ECEFF2] dark:hover:bg-[#3B3A51] rounded-lg p-2"
                 >
-                  <Link to={link} smooth duration={500}>
-                    <RoughNotation
-                      type="underline"
-                      brackets={["left", "right"]}
-                      strokeWidth={2}
-                      show={true}
-                      color="#8ac926"
-                      animationDelay={500}
-                    >
+                  <Link to={link} smooth duration={500} className=" ">
+ 
                       {link}
-                    </RoughNotation>
                   </Link>
                 </li>
               ))}
+              <li>
+              <div className="hidden md:flex space-x-5 text-3xl">
+            <Switcher />
+          </div>
+              </li>
             </ul>
           </div>
-          <div className="hidden md:flex space-x-5 text-3xl border-gray-100 border-x">
-            <a
-              href="https://github.com/AzmSurov"
-              target="_blank"
-              rel="noreferrer"
-              c
-            >
-              <FaGithub />
-            </a>
-            <a
-              href="https://linkedin.com/in/azms"
-              target="_blank"
-              rel="noreferrer"
-              class="text-sky-600 hover:text-opacity-75"
-            >
-              <FaLinkedinIn />
-            </a>
-          </div>
+       
           <div
             onClick={() => {
               setNav(!nav);
@@ -103,7 +85,8 @@ const Navbar = ({ setSendData }) => {
           </div>
 
           {nav && (
-            <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-white text-black">
+            <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-white text-black dark:bg-gray-900 dark:text-white">
+                                                              <Switcher />
               {links.map(({ id, link }) => (
                 <li
                   key={id}
@@ -119,8 +102,11 @@ const Navbar = ({ setSendData }) => {
                   >
                     {link}
                   </Link>
+
                 </li>
+
               ))}
+
             </ul>
           )}
           {!nav &&           setSendData(true)}

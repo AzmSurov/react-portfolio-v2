@@ -4,7 +4,7 @@ import {FiMail} from 'react-icons/fi'
 import { RiFilePaper2Line } from "react-icons/ri"
 const Footer = () => {
   return (
-    <div>
+    <div className='text-gray-900 dark:text-white  bg-[#F3F4F5] dark:bg-slate-900'>
         <footer class="text-center">
   <div class="max-w-screen-xl px-4 py-12 mx-auto sm:px-6 lg:px-8">
     <div class="max-w-3xl mx-auto space-y-6">
@@ -20,7 +20,7 @@ const Footer = () => {
         </a>
 
         <a
-          class="text-gray-900 hover:text-opacity-75 text-4xl"
+          class="text-gray-900 dark:text-white hover:text-opacity-75 text-4xl"
           href="https://github.com/AzmSurov"
           target="_blank"
           rel="noopener noreferrer"

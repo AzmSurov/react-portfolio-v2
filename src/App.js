@@ -17,7 +17,24 @@ function App() {
 const [sendData, setSendData] = useState(true);
 
 const [loading, setLoading] = useState(false);
+const [theme, setTheme] = useState(null);
+  useEffect (() => {
+    if(window.matchMedia('(prefers-color-scheme: dark)').matches){
+      setTheme('dark');
+    }
+    else {
+      setTheme('light');
+    }
+  }, [])
 
+  useEffect(() => {
+    if(theme === 'dark'){
+      document.documentElement.classList.add('dark');
+    }
+    else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [theme])
 useEffect(() => {
   setLoading(true)
   setTimeout(() => {
@@ -26,11 +43,11 @@ useEffect(() => {
 }, [])
 
   return (
-    <div className="antialiased container mx-auto h-screen tracking-wide ">
+    <div className="antialiased  h-screen tracking-wide bg-[#F3F4F5] dark:bg-slate-900">
       {
         loading ? <Loader /> : 
         [
-      <Navbar setSendData ={setSendData} />,
+      <div ><Navbar setSendData ={setSendData} /></div>,
       <Main sendData= {sendData} />,
       <About sendData= {sendData} />,
       <Skills />,

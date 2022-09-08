@@ -54,24 +54,29 @@ const Skills = () => {
             src: mongodb,
           },
       ];
+
+      
       
   return (
     <div
     name="skills"
-    className=' pb-12'
+    className=' pb-12  text-gray-900 dark:text-white  bg-[#F3F4F5] dark:bg-slate-900'
   >
-    <div className="p-4 text-black">
+    <div className="p-4 text-black dark:text-white container mx-auto">
       <div>
-        <p className="text-4xl font-bold inline">
+        
+        <p className="text-4xl font-extrabold text-slate-900 dark:text-white inline">
         <RoughNotation type="underline" animationDelay={1000} strokeWidth={7} show={true} color="#ff595e">
             Skills
             </RoughNotation>
         </p>
         <p className="py-6 text-xl">These are the technologies I've worked with and learning something new every other day!</p>
+        
       </div>
       </div>
 
     <section className=''>
+    <div className="center"></div>
     <div className='container mx-auto'>
       <div
         className='grid grid-cols-5 md:grid-cols-10 md:grid-flow-col gap-y-10 '

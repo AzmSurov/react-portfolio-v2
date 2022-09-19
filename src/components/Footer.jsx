@@ -1,7 +1,7 @@
 import React from 'react'
 import {FaGithub, FaLinkedinIn } from "react-icons/fa";
 import {FiMail} from 'react-icons/fi'
-import { RiFilePaper2Line } from "react-icons/ri"
+
 import {ImYoutube} from 'react-icons/im'
 const Footer = () => {
   return (

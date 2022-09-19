@@ -31,7 +31,7 @@ useEffect(() => {
     <Routes>
         <Route path="/" element={[
 
-<div className="antialiased  h-screen tracking-wide bg-[#F3F4F5] dark:bg-slate-900">
+<div className="antialiased  min-h-screen tracking-wide bg-[#F3F4F5] dark:bg-slate-900">
 {
   loading ? <Loader /> : 
   [

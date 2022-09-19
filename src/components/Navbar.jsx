@@ -67,7 +67,7 @@ const Navbar = ({ setSendData }) => {
                 </li>
               ))}
               <li>
-              <div className="hidden md:flex space-x-5 text-3xl">
+              <div className="hidden md:flex space-x-5 text-3xl animate-pulse">
             <Switcher />
           </div>
               </li>

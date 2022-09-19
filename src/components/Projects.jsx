@@ -6,23 +6,25 @@ import mealGenerator from "../assets/projects/miniProjects/MealGenerator.png";
 import shadowUI from "../assets/projects/frontEnd/ShadowUI.png";
 import travelAgency from "../assets/projects/frontEnd/travel-agency.png";
 import organo from "../assets/projects/frontEnd/organo.png";
-import shortner from "../assets/projects/fullStack/Shortner.png"
 import pos from "../assets/projects/frontEnd/pos.png";
+import shortner from "../assets/projects/fullStack/Shortner.png"
+import Switcher from "./Switcher";
 import { FiGithub } from "react-icons/fi";
 import { HiOutlineExternalLink } from "react-icons/hi";
-const Portfolio = () => {
-  //FullStack Projects
+import { Link } from "react-router-dom";
+
+const Projects = () => {
   const fullstack = [
     {
       id: 1,
       src: shortner,
-      liveLink: "https://shortly-44afc.web.app/",
-      sourceCode: "",
-      title: "Link Shortner",
+      liveLink: "https://azmsurov.github.io/UnsplashApi/",
+      sourceCode: "https://github.com/AzmSurov/UnsplashApi",
+      title: "Unsplash API.",
       description:
-        "React and Firebase App which generates shortened links. You can create and save as many links you want and share it others. The app is similar other sites like bitly.com or tinyurl.com",
-      idx: ["React", "Tailwind", "Firebase"],
-      isHidden: "hidden",
+        "A simply app to display pictures from Unsplash. This mini project makes use of unsplash API to search for and display images based on the search keyword",
+      idx: ["HTML", "CSS", "JS"],
+      isHidden: "",
     },
   ];
 
@@ -111,13 +113,12 @@ const Portfolio = () => {
   const [highlights, setHighlights] = useState(true);
   const [highlightsSecond, setHighlightsSecond] = useState(false);
   const [highlightsThird, setHighlightsThird] = useState(false);
-
   return (
-    <div className=" text-gray-900 dark:text-white  bg-[#F3F4F5] dark:bg-slate-900">
+    <div className=" text-gray-900 dark:text-white  bg-[#F3F4F5] dark:bg-slate-900 min-h-screen">
       <div name="portfolio" className="md:h-2/3 container mx-auto">
-        <div className="p-4 mx-auto flex flex-col justify-center w-full h-full">
-          <div className="pb-8">
-            <p className="text-4xl font-extrabold text-slate-900 dark:text-white inline">
+        <div className="p-4 mx-auto flex flex-col justify-center w-full ">
+          <div className="pb-8 flex justify-between">
+            <p className=" text-2xl sm:text-4xl font-extrabold text-slate-900 dark:text-white inline">
               <RoughNotation
                 type="underline"
                 animationDelay={1000}
@@ -125,10 +126,17 @@ const Portfolio = () => {
                 show={true}
                 color="#c8b6ff"
               >
-                Portfolio
+                All Projects
               </RoughNotation>
             </p>
-            <p className="pt-6 text-xl">Check out some of my featured work! </p>
+            <div className="flex gap-4 items-center">
+              <Link to="/">
+                <button className="px-4 py-1.5 sm:px-4 bg-[#3B3A51] text-white rounded-lg">
+                  Go Back
+                </button>
+              </Link>
+              <Switcher />
+            </div>
           </div>
         </div>
 
@@ -255,16 +263,12 @@ const Portfolio = () => {
                                   <a
                                     href={sourceCode}
                                     className="rounded-xl p-2 text-gray-900 dark:text-white  bg-[#ECEFF2] dark:bg-[#3B3A51] hover:opacity-80"
-                                    target="_blank"
-                                    rel="noreferrer"
                                   >
                                     <FiGithub size={22} />{" "}
                                   </a>
                                   <a
                                     href={liveLink}
                                     className="rounded-xl p-2 text-gray-900 dark:text-white  bg-[#ECEFF2] dark:bg-[#3B3A51] hover:opacity-80"
-                                    target="_blank"
-                                    rel="noreferrer"
                                   >
                                     <HiOutlineExternalLink size={22} />{" "}
                                   </a>
@@ -309,7 +313,6 @@ const Portfolio = () => {
                         sourceCode,
                         title,
                         description,
-                        isHidden,
                         idx,
                       }) => (
                         <div key={id} className="py-5">
@@ -328,17 +331,13 @@ const Portfolio = () => {
                                 <div className="flex justify-between lg:justify-start gap-2">
                                   <a
                                     href={sourceCode}
-                                    className={"rounded-xl p-2 text-gray-900 dark:text-white  bg-[#ECEFF2] dark:bg-[#3B3A51] hover:opacity-80 " +  (isHidden)}
-                                    target="_blank"
-                                    rel="noreferrer"
+                                    className="rounded-xl p-2 text-gray-900 dark:text-white  bg-[#ECEFF2] dark:bg-[#3B3A51] hover:opacity-80"
                                   >
                                     <FiGithub size={22} />{" "}
                                   </a>
                                   <a
                                     href={liveLink}
                                     className="rounded-xl p-2 text-gray-900 dark:text-white  bg-[#ECEFF2] dark:bg-[#3B3A51] hover:opacity-80"
-                                    target="_blank"
-                                    rel="noreferrer"
                                   >
                                     <HiOutlineExternalLink size={22} />{" "}
                                   </a>
@@ -402,16 +401,12 @@ const Portfolio = () => {
                                   <a
                                     href={sourceCode}
                                     className="rounded-xl p-2 text-gray-900 dark:text-white  bg-[#ECEFF2] dark:bg-[#3B3A51] hover:opacity-80"
-                                    target="_blank"
-                                    rel="noreferrer"
                                   >
                                     <FiGithub size={22} />{" "}
                                   </a>
                                   <a
                                     href={liveLink}
                                     className="rounded-xl p-2 text-gray-900 dark:text-white  bg-[#ECEFF2] dark:bg-[#3B3A51] hover:opacity-80"
-                                    target="_blank"
-                                    rel="noreferrer"
                                   >
                                     <HiOutlineExternalLink size={22} />{" "}
                                   </a>
@@ -454,4 +449,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Projects;

@@ -2,6 +2,7 @@ import React from 'react'
 import {FaGithub, FaLinkedinIn } from "react-icons/fa";
 import {FiMail} from 'react-icons/fi'
 import { RiFilePaper2Line } from "react-icons/ri"
+import {ImYoutube} from 'react-icons/im'
 const Footer = () => {
   return (
     <div className='text-gray-900 dark:text-white  bg-[#F3F4F5] dark:bg-slate-900'>
@@ -10,7 +11,7 @@ const Footer = () => {
     <div class="max-w-3xl mx-auto space-y-6">
       <div class="flex justify-center space-x-6">
         <a
-          class="text-sky-600 hover:text-opacity-75 text-4xl"
+          class="text-sky-600 hover:text-opacity-75 text-3xl"
           href="https://linkedin.com/in/azms"
           target="_blank"
           rel="noopener noreferrer"
@@ -20,7 +21,7 @@ const Footer = () => {
         </a>
 
         <a
-          class="text-gray-900 dark:text-white hover:text-opacity-75 text-4xl"
+          class="text-gray-900 dark:text-white hover:text-opacity-75 text-3xl"
           href="https://github.com/AzmSurov"
           target="_blank"
           rel="noopener noreferrer"
@@ -29,7 +30,7 @@ const Footer = () => {
          <FaGithub />
         </a>
         <a
-          class="text-rose-600	 hover:text-opacity-75 text-4xl"
+          class="text-blue-400	 hover:text-opacity-75 text-3xl"
           href="mailto:azm.surov@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
@@ -38,13 +39,13 @@ const Footer = () => {
          <FiMail />
         </a>
         <a
-          class="text-violet-700		 hover:text-opacity-75 text-4xl"
-          href="/resume.pdf"
+          class="text-rose-700		 hover:text-opacity-75 text-3xl"
+          href="https://www.youtube.com/channel/UCFL4w1Jz_LcIC62qyIKniFw"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub"
         >
-         <RiFilePaper2Line />
+         <ImYoutube />
         </a>
 
       </div>

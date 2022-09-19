@@ -27,7 +27,8 @@ const About = ({sendData}) => {
         </p>
 
         <br />
-        <p className="text-xl " >Here is my <a className="dark:text-black"  href="/resume.pdf" > <RoughNotation  type="highlight" animationDelay={1000} padding={5}  show={true} color="#ffd54f">
+        <p className="text-xl " >Here is my <a className="dark:text-black"  href="/resume.pdf"                                     target="_blank"
+                                    rel="noreferrer"> <RoughNotation  type="highlight" animationDelay={1000} padding={5}  show={true} color="#ffd54f">
             resume
             </RoughNotation></a> in case you want to have a look.</p>
       </div>

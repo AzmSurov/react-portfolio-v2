@@ -9,32 +9,17 @@ import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
 import ReactGA from 'react-ga';
-
+import { Routes, Route } from "react-router-dom";
+import Projects from "./components/Projects";
 ReactGA.initialize('UA-238163132-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 function App() {
 const [sendData, setSendData] = useState(true);
 
-const [loading, setLoading] = useState(false);
-const [theme, setTheme] = useState(null);
-  useEffect (() => {
-    if(window.matchMedia('(prefers-color-scheme: dark)').matches){
-      setTheme('dark');
-    }
-    else {
-      setTheme('light');
-    }
-  }, [])
 
-  useEffect(() => {
-    if(theme === 'dark'){
-      document.documentElement.classList.add('dark');
-    }
-    else {
-      document.documentElement.classList.remove('dark');
-    }
-  }, [theme])
+const [loading, setLoading] = useState(false);
+
 useEffect(() => {
   setLoading(true)
   setTimeout(() => {
@@ -43,20 +28,35 @@ useEffect(() => {
 }, [])
 
   return (
-    <div className="antialiased  h-screen tracking-wide bg-[#F3F4F5] dark:bg-slate-900">
-      {
-        loading ? <Loader /> : 
-        [
-      <div ><Navbar setSendData ={setSendData} /></div>,
-      <Main sendData= {sendData} />,
-      <About sendData= {sendData} />,
-      <Skills />,
-      <Portfolio />,
-      <Contact />,
-      <Footer />
-        ]
-      }
-    </div>
+    <Routes>
+        <Route path="/" element={[
+
+<div className="antialiased  h-screen tracking-wide bg-[#F3F4F5] dark:bg-slate-900">
+{
+  loading ? <Loader /> : 
+  [
+<Navbar setSendData ={setSendData} />,
+<Main sendData= {sendData} />,
+<About sendData= {sendData} />,
+<Skills />,
+<Portfolio />,
+<Contact />,
+<Footer />
+  ]
+}
+
+</div>
+        ]} />
+        
+        <Route path="/projects" element={[
+          <div className="antialiased bg-[#F3F4F5] dark:bg-slate-900" >
+            
+        <main className=""><Projects  /></main>
+
+        </div>]} />
+
+
+    </Routes>
   );
 }
 

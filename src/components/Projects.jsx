@@ -8,15 +8,27 @@ import travelAgency from "../assets/projects/frontEnd/travel-agency.png";
 import organo from "../assets/projects/frontEnd/organo.png";
 import pos from "../assets/projects/frontEnd/pos.png";
 import shortner from "../assets/projects/fullStack/Shortner.png"
+import iconWizardAI from "../assets/projects/fullStack/Shortner.png"
 import Switcher from "./Switcher";
 import { FiGithub } from "react-icons/fi";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { Link } from "react-router-dom";
-
+import { motion, AnimatePresence } from "framer-motion";
 const Projects = () => {
   const fullstack = [
     {
       id: 1,
+      src: iconWizardAI,
+      liveLink: "https://azmsurov.github.io/UnsplashApi/",
+      sourceCode: "https://github.com/AzmSurov/UnsplashApi",
+      title: "Unsplash API.",
+      description:
+        "A simply app to display pictures from Unsplash. This mini project makes use of unsplash API to search for and display images based on the search keyword",
+      idx: ["HTML", "CSS", "JS"],
+      isHidden: "",
+    },
+    {
+      id: 2,
       src: shortner,
       liveLink: "https://azmsurov.github.io/UnsplashApi/",
       sourceCode: "https://github.com/AzmSurov/UnsplashApi",

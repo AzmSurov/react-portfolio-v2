@@ -50,3 +50,14 @@
   border-radius: 75%;
   pointer-events: none;
 }
+
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 7px;
+  background: #fff ;
+  transform-origin: 0%;
+}

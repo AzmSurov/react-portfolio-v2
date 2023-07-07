@@ -22,6 +22,7 @@ const PortfolioCopy = () => {
       isHidden: ""
     },
     
+    
   ];
 
   const frontEnd = [

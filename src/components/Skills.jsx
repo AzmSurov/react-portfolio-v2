@@ -1,7 +1,8 @@
 import React from 'react'
 import { RoughNotation } from "react-rough-notation";
-import html from "../assets/icons/Html5.png";
-import css from "../assets/icons/css.png";
+
+import aws from "../assets/icons/AWS.png";
+import supabase from "../assets/icons/supabase.png";
 import javascript from "../assets/icons/js.png";
 import reactImage from "../assets/icons/react.png";
 import graphql from "../assets/icons/graphql.png";
@@ -15,31 +16,31 @@ const Skills = () => {
     const skills = [
         {
           id: 1,
-          src: html,
-        },
-        {
-          id: 2,
-          src: css,
-        },
-        {
-          id: 3,
-          src: javascript,
-        },
-        {
-          id: 4,
-          src: typescript,
-        },
-        {
-          id: 5,
           src: reactImage,
         },
         {
-          id: 6,
+          id: 2,
+          src: javascript,
+        },
+        {
+          id: 3,
+          src: typescript,
+        },
+        {
+          id: 4,
           src: nextjs,
         },
         {
-          id: 7,
+          id: 5,
           src: graphql,
+        },
+        {
+          id: 6,
+          src: aws,
+        },
+        {
+          id: 7,
+          src: supabase,
         },
         {
           id: 8,

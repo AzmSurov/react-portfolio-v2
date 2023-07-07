@@ -16,7 +16,7 @@ const About = ({sendData}) => {
           </p>
 
         <p className="text-xl mt-10">
-          Hi! I'm based in Winnipeg, Manitoba and currently I work as a Product Support Specialist. My passion for web development started back in 2017 when I decided to try editing a Shopify theme — turns out hacking together a simple add to cart button taught me a lot about HTML & CSS! I’ve always been curious about technology and how things work. Figuring things out is what inspired me to learn how to code.
+          My passion for web development started back in 2017 when I decided to try editing a Shopify theme — turns out hacking together a simple add to cart button taught me a lot about HTML & CSS! I’ve always been curious about technology and how things work. Figuring things out is what inspired me to learn how to code.
         </p>
         
        

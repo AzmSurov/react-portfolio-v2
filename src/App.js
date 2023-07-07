@@ -11,12 +11,14 @@ import Skills from "./components/Skills";
 import ReactGA from 'react-ga';
 import { Routes, Route } from "react-router-dom";
 import Projects from "./components/Projects";
+import { motion, useScroll, useSpring } from "framer-motion";
+
+
 ReactGA.initialize('UA-238163132-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 function App() {
 const [sendData, setSendData] = useState(true);
-
 
 const [loading, setLoading] = useState(false);
 
@@ -24,10 +26,11 @@ useEffect(() => {
   setLoading(true)
   setTimeout(() => {
     setLoading(false);
-  }, 2000)
+  }, 1000)
 }, [])
 
   return (
+    <motion.div >
     <Routes>
         <Route path="/" element={[
 
@@ -57,6 +60,7 @@ useEffect(() => {
 
 
     </Routes>
+    </motion.div>
   );
 }
 

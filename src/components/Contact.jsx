@@ -42,8 +42,8 @@ const Contact = () => {
             ></textarea>
 
             <button className="mt-4 relative text-sm font-medium  text-gray-500 active:text-white group focus:outline-none focus:ring">
-            <span class="absolute inset-0 border-gray-400  border-2"></span>
-  <span class="block  px-12 py-3 transition-transform bg-white border border-current group-hover:-translate-x-1 group-hover:-translate-y-1">
+            <span class="absolute inset-0 border-gray-400 rounded-md border-2"></span>
+  <span class="block  px-12 py-3 rounded-md transition-transform bg-white border border-current group-hover:-translate-x-1 group-hover:-translate-y-1">
     Let's Talk
   </span>
             </button>

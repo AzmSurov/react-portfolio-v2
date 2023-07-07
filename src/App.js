@@ -11,7 +11,7 @@ import Skills from "./components/Skills";
 import ReactGA from 'react-ga';
 import { Routes, Route } from "react-router-dom";
 import Projects from "./components/Projects";
-import { motion, useScroll, useSpring } from "framer-motion";
+import { motion} from "framer-motion";
 
 
 ReactGA.initialize('UA-238163132-1');

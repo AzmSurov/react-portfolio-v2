@@ -13,7 +13,7 @@ import Switcher from "./Switcher";
 import { FiGithub } from "react-icons/fi";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { Link } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
+
 const Projects = () => {
   const fullstack = [
     {

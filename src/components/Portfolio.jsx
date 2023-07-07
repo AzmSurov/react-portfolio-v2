@@ -11,7 +11,7 @@ import pos from "../assets/projects/frontEnd/pos.png";
 import iconWizardAI from "../assets/projects/fullStack/IconWizardAI.png"
 import { FiGithub } from "react-icons/fi";
 import { HiOutlineExternalLink } from "react-icons/hi";
-import { AnimatePresence, motion } from "framer-motion";
+
 const Portfolio = () => {
   //FullStack Projects
   const fullstack = [

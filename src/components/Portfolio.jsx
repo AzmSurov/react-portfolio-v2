@@ -7,6 +7,7 @@ import shadowUI from "../assets/projects/frontEnd/ShadowUI.png";
 import travelAgency from "../assets/projects/frontEnd/travel-agency.png";
 import organo from "../assets/projects/frontEnd/organo.png";
 import shortner from "../assets/projects/fullStack/Shortner.png"
+  import instavalidate from "../assets/projects/fullStack/Validate.png"
 import pos from "../assets/projects/frontEnd/pos.png";
 import iconWizardAI from "../assets/projects/fullStack/IconWizardAI.png"
 import { FiGithub } from "react-icons/fi";
@@ -22,12 +23,23 @@ const Portfolio = () => {
       sourceCode: "",
       title: "IconWizardAI",
       description:
-        `Instantly generate unique icons at a click of a button. Powered by OpenAI. Ranked 26th Product Hunt Launch. Check it out: https://www.producthunt.com/posts/iconwizardai`,
-      idx: ["NextJS", "Tailwind", "Supabase", "Supabase"],
+        `Instantly generate unique icons at a click of a button. Powered by OpenAI. Ranked 26th on Product Hunt Launch. Check it out: https://www.producthunt.com/posts/iconwizardai`,
+      idx: ["NextJS", "Tailwind", "Supabase"],
       isHidden: "hidden",
     },
     {
       id: 2,
+      src: instavalidate,
+      liveLink: "https://instavalidate.com/",
+      sourceCode: "",
+      title: "InstaValidate",
+      description:
+        "An app that allows analyze and validate business ideas. Users receive a comprehensive business report in just minutes, not days! ",
+      idx: ["NextJS", "Tailwind", "MongoDB"],
+      isHidden: "hidden",
+    },
+    {
+      id: 3,
       src: shortner,
       liveLink: "https://shortly-44afc.web.app/",
       sourceCode: "",
